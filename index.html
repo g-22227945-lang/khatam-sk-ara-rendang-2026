@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majlis Khatam Al-Quran Perdana Tahun 6 2026 | SK Ara Rendang</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            950: '#020617',
+                            900: '#0f172a',
+                            800: '#1e1b4b',
+                            700: '#1e293b'
+                        },
+                        gold: {
+                            300: '#fde047',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                        heading: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cyan-gradient-text {
+            background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 50%, #0284c7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(245, 158, 11, 0.5);
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+        }
+        .rub-el-hizb-bg {
+            background-image: radial-gradient(rgba(56, 189, 248, 0.1) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .star-particle {
+            position: absolute;
+            border-radius: 50%;
+            background: #fff;
+            animation: twinkle var(--duration, 3s) infinite ease-in-out;
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased rub-el-hizb-bg selection:bg-gold-500 selection:text-navy-950">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-navy-900 via-gold-600/30 to-navy-900 border-b border-gold-500/30 py-2 text-center text-xs sm:text-sm text-gold-300">
+        <span class="inline-flex items-center gap-2">
+            <i data-lucide="sparkles" class="w-4 h-4 text-gold-400"></i>
+            Anjuran Panitia Pendidikan Islam & Bahasa Arab SK Ara Rendang
+        </span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-navy-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gold-500/10 border border-gold-500/40 flex items-center justify-center font-heading font-bold text-gold-400 text-lg">
+                    SKAR
+                </div>
+                <div>
+                    <h1 class="font-heading font-bold text-sm sm:text-base text-slate-100 leading-tight">SK ARA RENDANG</h1>
+                    <p class="text-xs text-gold-400 font-medium">Khatam Al-Quran Perdana 2026</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#pengenalan" class="hover:text-gold-400 transition">Pengenalan</a>
+                <a href="#aturcara" class="hover:text-gold-400 transition">Atur Cara</a>
+                <a href="#jawatankuasa" class="hover:text-gold-400 transition">Jawatankuasa</a>
+                <a href="#lokasi" class="hover:text-gold-400 transition">Lokasi</a>
+            </nav>
+            <a href="#aturcara" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold text-xs sm:text-sm shadow-lg shadow-gold-500/20 hover:scale-105 transition">
+                Sertai Majlis
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Banner & Intro Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center py-16 px-4 overflow-hidden">
+        <!-- Background Glow Overlay -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gold-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8">
+            <!-- Calligraphy Header -->
+            <div class="font-arabic text-3xl sm:text-5xl text-gold-300 leading-relaxed tracking-wide drop-shadow-md">
+                مَجْلِسُ خَتْمِ الْقُرْءَانِ
+            </div>
+
+            <!-- Banner Frame -->
+            <div class="relative rounded-2xl p-2 bg-gradient-to-b from-gold-500/40 via-sky-500/20 to-gold-500/10 border border-gold-500/30 shadow-2xl">
+                <img src="MAJLIS KHATAM AL-QURAN 2026 (1).jpg" alt="Majlis Khatam Al-Quran SK Ara Rendang 2026 Banner" class="w-full h-auto rounded-xl shadow-inner object-cover max-h-[500px]">
+            </div>
+
+            <!-- Title & Metadata -->
+            <div class="space-y-4">
+                <h2 class="font-heading text-3xl sm:text-5xl font-extrabold tracking-tight">
+                    MAJLIS KHATAM AL-QURAN PERDANA TAHUN 6
+                </h2>
+                <p class="text-lg sm:text-xl text-sky-300 font-medium max-w-2xl mx-auto">
+                    Peringkat Sekolah Kebangsaan Ara Rendang (2026)
+                </p>
+            </div>
+
+            <!-- Quick Details Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto pt-4">
+                <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Tarikh Majlis</p>
+                        <p class="text-sm font-bold text-slate-100">18 November 2026 (Rabu)</p>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 shrink-0">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Masa</p>
+                        <p class="text-sm font-bold text-slate-100">8.30 Pagi - 10.10 Pagi</p>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs text-slate-400">Tempat</p>
+                        <p class="text-sm font-bold text-slate-100">Dewan Al-Farabi SKAR</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hadith Quote Banner -->
+            <div class="glass-card p-6 rounded-2xl max-w-3xl mx-auto text-left relative overflow-hidden">
+                <div class="absolute -right-4 -bottom-4 text-slate-800 opacity-20 pointer-events-none">
+                    <i data-lucide="book-open" class="w-32 h-32"></i>
+                </div>
+                <p class="text-sm sm:text-base italic text-slate-300 leading-relaxed mb-3">
+                    "Barangsiapa yang membaca satu huruf daripada Kitabullah (al-Quran), maka dia mendapat satu kebaikan (pahala), dan satu kebaikan itu digandakan menjadi sepuluh yang semisalnya..."
+                </p>
+                <span class="text-xs font-semibold text-gold-400 block">— (HR al-Tirmizi-Sahih)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pengenalan & Objektif Section -->
+    <section id="pengenalan" class="py-20 px-4 bg-navy-900/50 border-t border-b border-slate-800">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center max-w-3xl mx-auto space-y-3">
+                <h3 class="font-heading text-2xl sm:text-4xl font-bold gold-gradient-text">PENGENALAN & OBJEKTIF</h3>
+                <p class="text-slate-400 text-sm sm:text-base">Meraikan kejayaan anak-anak Tahun 6 yang telah berjaya mengkhatamkan 30 juzuk Al-Quran.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <!-- Pengenalan Card -->
+                <div class="glass-card p-8 rounded-2xl space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-semibold">
+                        <i data-lucide="info" class="w-3.5 h-3.5"></i> Latar Belakang Program
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-100">Latar Belakang</h4>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Majlis Khatam Al-Quran Perdana merupakan program tahunan yang dilaksanakan bagi meraikan anak-anak Tahun 6 yang telah berjaya khatam Al-Quran sebanyak 30 juzuk sepanjang pembelajaran al-Quran di Sekolah Kebangsaan Ara Rendang.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800">
+                        <p class="text-xs text-slate-400">Kumpulan Sasaran:</p>
+                        <p class="text-sm font-medium text-sky-300">Semua murid Tahun 6 SK. Ara Rendang yang berjaya khatam Al-Quran 30 juzuk dan membaca Al-Quran dengan betul dan bertajwid.</p>
+                    </div>
+                </div>
+
+                <!-- Objektif List Card -->
+                <div class="glass-card p-8 rounded-2xl space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold">
+                        <i data-lucide="target" class="w-3.5 h-3.5"></i> Hasrat & Matlamat
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-100">Objektif Utama Program</h4>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 text-sm font-bold">1</div>
+                            <p class="text-sm text-slate-300 pt-1">Memartabatkan Al-Quran dalam kehidupan seharian.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 text-sm font-bold">2</div>
+                            <p class="text-sm text-slate-300 pt-1">Melahirkan murid-murid yang dapat menghayati dan membudayakan Al-Quran dalam kehidupan.</p>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/10 border border-gold-500/30 text-gold-400 flex items-center justify-center shrink-0 text-sm font-bold">3</div>
+                            <p class="text-sm text-slate-300 pt-1">Memberi motivasi dan pengiktirafan agar murid-murid terus mencintai Al-Quran.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atur Cara Majlis Section -->
+    <section id="aturcara" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <h3 class="font-heading text-2xl sm:text-4xl font-bold gold-gradient-text">ATUR CARA MAJLIS</h3>
+                <p class="text-slate-400 text-sm">Garis masa perjalanan Majlis Khatam Al-Quran Perdana (18 November 2026)</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Timeline items -->
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">8.30 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Perarakan masuk peserta Khatam Al-Quran diiringi oleh barisan pentadbir</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">8.45 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Aluan Pengacara Majlis</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">8.50 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Bacaan Doa & Ucapan Guru Besar</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6 border-gold-500/50 bg-gold-500/5">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-300 text-sm sm:text-base">9.00 pagi</div>
+                    <div class="w-3 h-3 rounded-full bg-gold-400 shrink-0 animate-ping"></div>
+                    <div>
+                        <p class="text-sm sm:text-base font-bold text-gold-300">Majlis Khatam Al-Quran Perdana Bermula</p>
+                        <p class="text-xs text-slate-400">Didahului dengan Taklimat Ringkas oleh Khalifah Khatam Al-Quran</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">9.30 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Penyampaian cenderahati kepada peserta Jihad Iqra'</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">9.40 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Penyampaian sijil dan cenderahati kepada peserta Khatam Al-Quran</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">10.00 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Sesi Fotografi Bersama Kenangan</p>
+                </div>
+
+                <div class="glass-card p-5 rounded-xl flex items-center gap-6">
+                    <div class="w-24 shrink-0 text-right font-bold text-gold-400 text-sm sm:text-base">10.10 pagi</div>
+                    <div class="w-2 h-2 rounded-full bg-gold-400 shrink-0"></div>
+                    <p class="text-sm sm:text-base text-slate-200">Majlis Tamat dan Bersurai</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jawatankuasa Section -->
+    <section id="jawatankuasa" class="py-20 px-4 bg-navy-900/50 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <h3 class="font-heading text-2xl sm:text-4xl font-bold cyan-gradient-text">BARISAN JAWATANKUASA</h3>
+                <p class="text-slate-400 text-sm">Jawatankuasa Induk & Pelaksana Majlis Khatam Al-Quran Perdana 2026</p>
+            </div>
+
+            <!-- Jawatankuasa Induk Grid -->
+            <div class="space-y-6">
+                <h4 class="text-lg font-bold text-gold-400 border-b border-gold-500/20 pb-2">Jawatankuasa Induk</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Penasihat</p>
+                        <p class="text-base font-bold text-slate-100">En. Mohd Kamal B. Hj Ahmad</p>
+                        <p class="text-xs text-slate-400">Guru Besar SK Ara Rendang</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Naib Penasihat 1</p>
+                        <p class="text-base font-bold text-slate-100">En. Mohd Fauzi B. Hashim</p>
+                        <p class="text-xs text-slate-400">PK Pentadbiran</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Naib Penasihat 2</p>
+                        <p class="text-base font-bold text-slate-100">Pn. Bishalbinurillah Binti Shamsuddin</p>
+                        <p class="text-xs text-slate-400">PK Hal Ehwal Murid</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Naib Penasihat 3</p>
+                        <p class="text-base font-bold text-slate-100">Pn. Rafidah Binti Manap</p>
+                        <p class="text-xs text-slate-400">PK Kokurikulum</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Penyelaras</p>
+                        <p class="text-base font-bold text-slate-100">En. Abdul Malek Bin Yusuff</p>
+                        <p class="text-xs text-slate-400">KP Panitia Bahasa Arab</p>
+                    </div>
+                    <div class="glass-card p-5 rounded-xl">
+                        <p class="text-xs text-gold-400 font-semibold">Setiausaha</p>
+                        <p class="text-base font-bold text-slate-100">Pn. Syatriah Bt Abdul Aziz</p>
+                        <p class="text-xs text-slate-400">KP Panitia Pendidikan Islam</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jawatankuasa Pelaksana Summary -->
+            <div class="space-y-6 pt-6">
+                <h4 class="text-lg font-bold text-sky-400 border-b border-sky-500/20 pb-2">Jawatankuasa Pelaksana & AJK</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-slate-300">
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Khalifah Khatam:</span> En. Abdul Malek Bin Yusuff
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Bacaan Doa:</span> En. Hilman Bin Sahak
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Pengacara Majlis:</span> En. Mustaza Bin Habin
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Buku Program:</span> Pn. Najihah & Pn. Syatriah
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Siaraya:</span> En. Mohd Suhaimi Abd. Hamid
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Teknikal & Gimik:</span> Pn. Rodziah & Pn. Sakinah
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Bunga Coklat & Manggar:</span> Pn. Noor Hasliza, Pn. Noorsuryati, Pn. Hartini
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Sijil Khatam:</span> Pn. Noor Amira Binti Abdul Halim
+                    </div>
+                    <div class="p-4 rounded-xl bg-navy-950/60 border border-slate-800">
+                        <span class="font-bold text-slate-100">Hadiah & Cenderahati:</span> Pn. Syatriah & Pn. Noor Amira
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Penghargaan -->
+    <footer id="lokasi" class="py-12 px-4 border-t border-slate-800 bg-navy-950 text-center space-y-6">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <h5 class="font-heading font-bold text-gold-400 text-lg">PENGHARGAAN</h5>
+            <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                Setinggi-tinggi penghargaan terima kasih kepada Tuan Guru Besar, barisan pentadbir, PIBG, guru-guru, dan semua yang terlibat secara langsung mahupun tidak langsung untuk menjayakan Khatam Al-Quran Perdana Tahun 6 SKAR 2026.
+            </p>
+            <p class="text-xs text-sky-400 italic">"Diharapkan kerjasama ini berterusan dan ukhuwwah sentiasa berkekalan."</p>
+        </div>
+        <div class="pt-8 border-t border-slate-900 text-xs text-slate-500">
+            &copy; 2026 SK Ara Rendang, Kepala Batas, Seberang Perai Utara, Pulau Pinang. Hak Cipta Terpelihara.
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
