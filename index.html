@@ -96,27 +96,34 @@
         </span>
     </div>
 
-    <!-- Navigation Header -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-navy-950/80 border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-    <img src="logo.png" alt="Logo SK Ara Rendang" class="w-10 h-10 object-contain">
-    <div>
-        <h1 class="font-heading font-bold text-sm sm:text-base text-slate-100 leading-tight">SK ARA RENDANG</h1>
-        <p class="text-xs text-gold-400 font-medium">Khatam Al-Quran Perdana 2026</p>
-    </div>
-</div>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#pengenalan" class="hover:text-gold-400 transition">Pengenalan</a>
-                <a href="#aturcara" class="hover:text-gold-400 transition">Atur Cara</a>
-                <a href="#jawatankuasa" class="hover:text-gold-400 transition">Jawatankuasa</a>
-                <a href="#lokasi" class="hover:text-gold-400 transition">Lokasi</a>
-            </nav>
-            <a href="#aturcara" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-600 text-navy-950 font-bold text-xs sm:text-sm shadow-lg shadow-gold-500/20 hover:scale-105 transition">
-                Sertai Majlis
-            </a>
+    <!-- Header & Navigation Bar (Mesra Laptop & Handphone) -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/90 border-b border-gold-500/20 px-3 py-2.5">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-4">
+
+        <!-- Logo & Tajuk Sekolah -->
+        <div class="flex items-center gap-2.5">
+            <img src="logo.png" alt="Logo SK Ara Rendang" class="w-8 h-8 sm:w-10 sm:h-10 object-contain">
+            <div>
+                <h1 class="font-heading font-bold text-xs sm:text-base text-slate-100 leading-tight">SK ARA RENDANG</h1>
+                <p class="text-[10px] sm:text-xs text-gold-400 font-medium">Khatam Al-Quran Perdana 2026</p>
+            </div>
         </div>
-    </header>
+
+        <!-- Menu Navigasi (Sentiasa Muncul di Handphone & Laptop) -->
+        <nav class="flex items-center justify-center gap-1 sm:gap-3 text-[11px] sm:text-sm font-medium w-full sm:w-auto border-t sm:border-t-0 border-slate-800/60 pt-1.5 sm:pt-0">
+            <a href="#pengenalan" class="text-slate-300 hover:text-gold-400 px-2 py-1 rounded-md hover:bg-slate-800/60 transition-colors">
+                Pengenalan
+            </a>
+            <a href="#aturcara" class="text-slate-300 hover:text-gold-400 px-2 py-1 rounded-md hover:bg-slate-800/60 transition-colors">
+                Atur Cara
+            </a>
+            <a href="#jawatankuasa" class="text-slate-300 hover:text-gold-400 px-2 py-1 rounded-md hover:bg-slate-800/60 transition-colors">
+                Jawatankuasa
+            </a>
+        </nav>
+
+    </div>
+</header>
 
     <!-- Hero Banner & Intro Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center py-16 px-4 overflow-hidden">
